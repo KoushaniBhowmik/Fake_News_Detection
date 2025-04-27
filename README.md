@@ -100,13 +100,15 @@ nltk.download('wordnet')
 ---
 
 ## How to Run the Application Locally 🖥️
-- After installing all dependencies, inside your project folder:
-- streamlit run app.py
+- After installing all dependencies, inside your cmd:
+```bash
+streamlit run app.py
+```
 
 ---
 
 ## It will automatically open in your web browser at:
-- http://localhost:8501
+- http://localhost:digits
 - Input news text → Click Predict → See Result, Confidence Score, and Explanation!
 
 ---
