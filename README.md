@@ -4,7 +4,7 @@ This project is a complete Fake News Detection system combining Machine Learning
 ---
 
 ## Demo 🚀
-Live Deployment:[ (https://fakenews-detection-system.streamlit.app/)](https://fakenews-detection-system.streamlit.app/)
+Live Deployment:[ ()]()
 
 ---
 
