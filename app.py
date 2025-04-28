@@ -18,7 +18,7 @@ def preprocess_text(text):
     return text
 
 # Streamlit page config
-st.set_page_config(page_title="Fake News Detector", page_icon="📰", layout="wide")
+st.set_page_config(page_title="Fake News Detector", page_icon="📰", layout="wide", initial_sidebar_state="auto")
 
 # Load external CSS
 with open("style.css") as f:
