@@ -27,7 +27,7 @@ Install Python Libraries
 Download NLTK Resources
   - punkt, stopwords, wordnet
   ↓
-Load Dataset (news data CSV)
+Load Dataset (from Kaggle)
   ↓
 Data Preprocessing
   - Lowercasing
@@ -74,11 +74,16 @@ END
 - During installation, make sure to check "Add Python to PATH" option.
 #### Verify installation:
 ```bash
-- python --version
-- pip --version
+python --version
+pip --version
 ```
 
 ### 2. Install Required Libraries Manually 📚
+Now you can install all libraries with just one command using requirements.txt:
+```bash
+pip install -r requirements.txt
+```
+Also download NLTK resources manually:
 ```bash
 pip install streamlit
 pip install scikit-learn
@@ -86,6 +91,12 @@ pip install pandas
 pip install numpy
 pip install nltk
 ```
+
+### 3. Download Dataset from Kaggle 📥
+- Create a free account on Kaggle.
+- Find two datasets for fake news detection (e.g. "Fake News" , " True news").
+- Download the dataset CSV files.
+- Place it in your project's dataset/ folder.
 
 ---
 
@@ -104,23 +115,22 @@ nltk.download('wordnet')
 ```bash
 streamlit run app.py
 ```
-
----
-
-## It will automatically open in your web browser at:
-- http://localhost:digits
+### It will automatically open in your web browser at:
+```bash
+http://localhost:digits
+```
 - Input news text → Click Predict → See Result, Confidence Score, and Explanation!
 
 ---
 
 ## Deployment Instructions ☁️
-- You can easily deploy this application using Streamlit Community Cloud:
-- Push all project files to a GitHub repository.
+You can easily deploy this application using Streamlit Community Cloud:
+- Push all project files (including requirements.txt) to GitHub.
 - Go to Streamlit Cloud and sign in.
 - Click "New App", select your GitHub repository.
 - Select the main Python file (app.py).
 - Click Deploy!
-- You will get a public HTTPS link to share your app with everyone.
+You will get a public HTTPS link to share your app with everyone.
 
 ---
 
@@ -128,6 +138,7 @@ streamlit run app.py
 ```bash
 ├── app.py               # Main Streamlit app
 ├── model.pkl            # Saved ML model
+├── requirements.txt     # Python dependencies
 ├── vectorizer.pkl       # Saved ML model
 ├── dataset/             # Folder containing datasets
 ├── css/                 # Custom CSS files
@@ -142,7 +153,7 @@ streamlit run app.py
 - Replace the old model.pkl in the project.
 
 ### Dataset Size:
-If your dataset is too large, Streamlit Cloud might restrict uploads (limit ~100MB).
+Kaggle datasets are usually large — ensure your dataset fits the free hosting limits of Streamlit Cloud (~100MB total).
 
 ### Path Settings:
 Ensure all file paths are relative (not absolute) for smooth deployment.
