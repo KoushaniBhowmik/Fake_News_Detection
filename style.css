@@ -1,0 +1,128 @@
+/* General body settings */
+body {
+    background-color: #0f1117;
+    color: white;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container */
+.main {
+    padding: 20px;
+    text-align: left;
+}
+
+/* Title Styling */
+h2 {
+    text-align: left;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* Textarea styling */
+textarea {
+    background-color: #262730;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* Button styling */
+.stButton > button {
+    background-color: #4CAF50;
+    color: white;
+    height: 50px;
+    width: 180px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+
+/* Mobile (Phones) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 9px;
+    }
+
+    textarea {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .stButton > button {
+        font-size: 10px;
+        width: 200px;
+        height: 45px;
+    }
+
+    .button-container {
+        flex-wrap: wrap;
+    }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    textarea {
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .stButton > button {
+        font-size: 17px;
+        width: 170px;
+        height: 48px;
+    }
+}
+
+/* Laptop */
+@media (min-width: 769px) and (max-width: 1200px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    textarea {
+        font-size: 18px;
+        width: 100%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1201px) {
+    h2 {
+        font-size: 35px;
+    }
+
+    textarea {
+        font-size: 18px;
+        width: 600px;
+    }
+}
